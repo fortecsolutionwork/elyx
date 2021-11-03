@@ -314,4 +314,7 @@
   .login-signup > div {
     display: block;
   }
+  .contact_btn span {
+    font-size: 20px;
+  }
 }
