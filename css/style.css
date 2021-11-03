@@ -382,3 +382,38 @@ img {
 .slick-next::after {
   transform: rotateY(180deg);
 }
+
+/* cta */
+.cta-section {
+  padding-bottom: 3em;
+}
+.cta-wrapper .content {
+  position: absolute;
+  bottom: 65px;
+  left: 90px;
+}
+.cta-wrapper h2 {
+  font-size: 2.5em;
+  max-width: 80%;
+  margin-bottom: 15px;
+}
+.cta-wrapper {
+  position: relative;
+}
+.cta-wrapper .bg_img {
+  border-radius: 32px;
+}
+.cta-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 130px;
+}
+.cta-footer h3 {
+  font-size: 2.5em;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.cta-footer h3 span {
+  color: var(--blue);
+}

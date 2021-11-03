@@ -1,3 +1,13 @@
+@media (max-width: 1440px) {
+  .cta-wrapper .content {
+    bottom: 35px;
+    left: 60px;
+  }
+  .cta-wrapper .bg_img {
+    border-radius: 24px;
+  }
+}
+
 @media (max-width: 1280px) {
   .listing_row .img_wrapper .bid_price::after {
     height: 133%;
@@ -8,6 +18,12 @@
   }
   .testimonials_wrapper .slick-prev {
     top: -67px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cta-wrapper .bg_img {
+    border-radius: 2em;
   }
 }
 
@@ -44,6 +60,9 @@
   }
   .testimonials_wrapper .slick-prev {
     top: -45px;
+  }
+  .cta-footer {
+    padding-top: 70px;
   }
 }
 
@@ -193,5 +212,44 @@
   .footer-logo {
     max-width: 120px;
     margin-top: 50px;
+  }
+  .cta-wrapper .bg_img {
+    min-height: 220px;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 6em;
+  }
+  .cta-wrapper .content {
+    position: unset;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .cta-wrapper h2 {
+    font-size: 20px;
+    max-width: 100%;
+    margin-bottom: 4px;
+  }
+  .cta-wrapper p {
+    font-size: 14px;
+  }
+  .btn.common_btn {
+    font-size: 12px;
+  }
+  .btn.common_btn {
+    font-size: 12px;
+  }
+  .cta-footer h3 {
+    font-size: 20px;
+  }
+  .cta-footer {
+    padding-top: 20px;
+    display: block;
+  }
+  .cta-section {
+    padding-bottom: 25px;
+  }
+  .cta-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
