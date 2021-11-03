@@ -1,3 +1,22 @@
+// prelaoder
+$(window).on('load', function () { // makes sure the whole site is loaded 
+  $('#status').fadeOut(); // will first fade out the loading animation 
+  $('.preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+  $('body').delay(350).css({ 'overflow': 'visible' });
+})
+
+// header
+
+$(function () {
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 50) {
+      $(".main_header").addClass("fixed");
+    } else {
+      $(".main_header").removeClass("fixed");
+    }
+  });
+});
+
 /* banner slider */
 $('.banner_slider').slick({
 dots: true,
