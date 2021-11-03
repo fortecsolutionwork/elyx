@@ -99,6 +99,7 @@ img {
   border-radius: 4px;
   display: inline-block;
   text-transform: uppercase;
+  cursor: pointer;
 }
 /* Header End */
 /* footer start */
