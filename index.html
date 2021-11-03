@@ -15,7 +15,7 @@
     <header class="main_header">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-3"><img class="main_logo" src="images/logo.svg" alt=""><span class="menu_toggle"></span></div>
+                <div class="col-md-3 login-signup"><img class="main_logo" src="images/logo.svg" alt=""><div><span data-bs-toggle="modal" data-bs-target="#login">Login</span> <span data-bs-toggle="modal" data-bs-target="#sighUp">Signup</span></div></div>
                 <div class="col-md-9 text-right">
                     <div class="humburger-menu">
                         <span class="humburger-span"></span>
@@ -28,7 +28,7 @@
                         <li class="list-inline-item"><a href="#">Submit for Auction</a></li>
                         <li class="list-inline-item"><a href="#">How it Works</a></li>
                         <li class="list-inline-item"><a href="#">Get the Email</a></li>
-                        <li class="list-inline-item"><a href="#" class="contact_btn">Login/Signup</a></li>
+                        <li class="list-inline-item"><a href="#"   class="contact_btn"> <span data-bs-toggle="modal" data-bs-target="#login">Login</span> <span data-bs-toggle="modal" data-bs-target="#sighUp">/Signup</span> </a></li>
                     </ul>
                 </div>
             </div>
@@ -413,11 +413,123 @@
     </footer>
 
 
+
+    <!-- signup modal -->
+
+<!-- Modal -->
+<div class="modal-wrapper">
+    <div class="modal fade" id="sighUp" tabindex="-1" aria-labelledby="sighUp" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="images/Close.png" alt=""></button>
+            </div>
+            <div class="modal-body">
+                <div class="top-head">
+                    <img src="images/modal-logo.png" alt="" class="modal-logo">
+                <h5 class="modal-title" id="exampleModalLabel">Sign Up with ElyX</h5>
+                <p>Let’s set up your account so you can start a bidding.</p>
+                </div>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="">Full Name</label>
+                        <div class="input-wrapper">
+                            <img style="width: 22px;" src="images/user-1.png" alt="">
+                            <input type="text"  name="" id="">
+                        </div>
+                    </div>
+                    <div class="form-group-wrapper">
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <div class="input-wrapper">
+                                <img style="width: 22px;" src="images/email.png" alt="">
+                                <input type="email"  name="" id="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Phone</label>
+                            <div class="input-wrapper">
+                                <img src="images/phone.png" alt="">
+                                <input type="number"  name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-wrapper">
+                        <div class="form-group">
+                            <label for="">Password</label>
+                            <div class="input-wrapper">
+                                <img src="images/password.png" alt="">
+                                <input type="password"  name="" id="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Confirm Password</label>
+                            <div class="input-wrapper">
+                                <img src="images/password.png" alt="">
+                                <input type="password"  name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-type">
+                        <p>User Type</p>
+                       <div class="both-btn">
+                        <a href="#" class="btn">Buyer</a>
+                        <a href="#" class="btn outline">Seller</a>
+                       </div>
+                    </div>
+                    <button class="submit-btn" type="submit">SIgn Up NOW</button>
+                    <a href="#" class="link">Already have a account? <span>Login Now</span> </a>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="modal-wrapper">
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="images/Close.png" alt=""></button>
+            </div>
+            <div class="modal-body">
+                <div class="top-head">
+                    <img src="images/modal-logo.png" alt="" class="modal-logo">
+                <h5 class="modal-title" id="exampleModalLabel">Login with ElyX</h5>
+                <p>Let’s set up your account so you can start a bidding.</p>
+                </div>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="">Email Address</label>
+                        <div class="input-wrapper">
+                            <img style="width: 22px;" src="images/email.png" alt="">
+                            <input type="email"  name="" id="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <div class="input-wrapper">
+                            <img style="width: 22px;" src="images/password.png" alt="">
+                            <input type="password"  name="" id="">
+                        </div>
+                    </div>
+                    <button class="submit-btn" type="submit">Login Now</button>
+                    <a href="#" class="link">Don't have an account? <span>Get started</span> </a>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.countdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <script src="js/custom.js"></script>
 </body>
 </html>

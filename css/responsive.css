@@ -6,6 +6,9 @@
   .cta-wrapper .bg_img {
     border-radius: 24px;
   }
+  .modal-dialog {
+    margin-top: 3vh;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -63,6 +66,14 @@
   }
   .cta-footer {
     padding-top: 70px;
+  }
+  .modal .top-head h5 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  .modal .top-head p {
+    font-size: 15px;
+    margin-bottom: 20px;
   }
 }
 
@@ -124,7 +135,7 @@
     padding: 10px 0;
   }
   .main_header .humburger-menu {
-    top: 24px;
+    top: 21px;
   }
   .listing_row > div {
     flex: 0 0 100%;
@@ -254,5 +265,53 @@
   }
   .listing_row .img_wrapper {
     overflow-y: hidden;
+  }
+  .login-signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+  }
+  .login-signup span {
+    font-size: 12px;
+    padding: 2px 8px;
+    margin: 0 2px;
+    border-radius: 23px;
+    border: 1px solid #0c50ca;
+    color: #0c50ca;
+  }
+  .modal-dialog {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 98%;
+  }
+  .modal .submit-btn {
+    padding: 13px;
+    font-size: 15px;
+  }
+  .modal label {
+    font-size: 14px;
+  }
+  .form-group {
+    margin-bottom: 10px;
+  }
+  .form-group-wrapper {
+    flex-wrap: wrap;
+  }
+  .form-group-wrapper .form-group {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .user-type .both-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .user-type .both-btn a {
+    max-width: 48%;
+    flex: 0 0 48%;
+  }
+  .login-signup > div {
+    display: block;
   }
 }

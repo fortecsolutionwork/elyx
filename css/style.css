@@ -6,6 +6,9 @@
   --text: #37474f;
   --bg: #353535;
 }
+a:hover {
+  text-decoration: none;
+}
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -416,4 +419,125 @@ img {
 }
 .cta-footer h3 span {
   color: var(--blue);
+}
+
+/* modal */
+.modal-dialog {
+  max-width: 640px;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+.modal-header {
+  border: none;
+  justify-content: flex-end;
+}
+.modal button.btn-close {
+  border: none;
+  background: transparent;
+}
+.modal .top-head {
+  text-align: center;
+}
+.modal .top-head h5 {
+  font-size: 2em;
+  font-weight: 900;
+  margin: 10px 0;
+}
+.input-wrapper {
+  border: 1px solid #cccc;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-wrapper input {
+  width: calc(100% - 30px);
+  border: none;
+}
+.input-wrapper input:focus,
+.input-wrapper input:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+.form-group-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-group-wrapper .form-group {
+  flex: 0 0 49%;
+  max-width: 49%;
+}
+.user-type .btn {
+  background: var(--blue);
+  color: #fff;
+  font-size: 15px;
+  border-radius: 7px;
+  font-weight: 400;
+}
+.user-type .btn:hover {
+  background-color: #000;
+}
+.user-type .btn.outline {
+  background: transparent;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  margin-left: 10px;
+}
+.user-type .btn.outline:hover {
+  background: var(--blue);
+  color: #fff;
+}
+.modal .submit-btn {
+  background: var(--blue);
+  color: #fff;
+  font-size: 15px;
+  border-radius: 7px;
+  font-weight: 600;
+  border: none;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.modal .submit-btn:hover {
+  background-color: #000;
+}
+.modal .link {
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+.modal .link span {
+  color: var(--blue);
+  font-weight: 600;
+}
+.modal label {
+  font-size: 16px;
+}
+.user-type p {
+  font-size: 16px;
+}
+.modal-content {
+  padding: 20px 30px 50px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.login-signup > div {
+  display: none;
 }
